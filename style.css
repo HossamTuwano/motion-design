@@ -1,50 +1,12 @@
-/* 
-================================
-A sample transition */
-.paw {
-  transition: transform 0.25s ease-in;
+.tuna {
+  /* use the timing function steps() to chunk the animation into 12 equal pieces */
+  background: url(http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  margin: 100px auto 0;
 }
 
-.playing .paw {
-  transform: translateX(30px);
-}
+/* Don't forget: You'll need an @keyframes block to change the background image's position! */
 
-/* 
-  ================================
-  Your code here! */
-.playing .ball {
-  transition: background 1s, transform 1s .25s ease-out;
-}
-     
-.playing .ball {
-  transform: translateX(300px);
-  background: red;    
-}  
-  
-/* Double hint: Don't forget about transition-delay! */
 
-/* 
-  ================================
-  Necessary CSS Below-- no need to edit */
-
-.paw {
-  position: absolute;
-  top: 0;
-  left: 80px;
-}
-  
-.ball {
-  background: #0097c0;
-  border-radius: 50%;
-  position: absolute;
-  top: 200px;
-  left: 160px;
-  width: 100px;
-  height: 100px;
-}
-
-body {
-  background: #e3edf2;
-}
-
-/* CP_DoFullRefresh */
+p {text-align: center;}
