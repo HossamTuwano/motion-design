@@ -1,0 +1,50 @@
+/* 
+================================
+A sample transition */
+.paw {
+  transition: transform 0.25s ease-in;
+}
+
+.playing .paw {
+  transform: translateX(30px);
+}
+
+/* 
+  ================================
+  Your code here! */
+.playing .ball {
+  transition: background 1s, transform 1s .25s ease-out;
+}
+     
+.playing .ball {
+  transform: translateX(300px);
+  background: red;    
+}  
+  
+/* Double hint: Don't forget about transition-delay! */
+
+/* 
+  ================================
+  Necessary CSS Below-- no need to edit */
+
+.paw {
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+  
+.ball {
+  background: #0097c0;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 160px;
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  background: #e3edf2;
+}
+
+/* CP_DoFullRefresh */
