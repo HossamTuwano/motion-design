@@ -1,12 +1,29 @@
 .tuna {
   /* use the timing function steps() to chunk the animation into 12 equal pieces */
-  background: url(http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png) 0 0 no-repeat; 
+  background: url(http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png)
+    0 0 no-repeat;
   height: 200px;
   width: 400px;
   margin: 100px auto 0;
+  animation: tunaWalk 1s steps(11) infinite;
 }
 
 /* Don't forget: You'll need an @keyframes block to change the background image's position! */
 
+p {
+  text-align: center;
+}
 
-p {text-align: center;}
+/* 12 frames
+  200px tall
+  total height 2400px
+*/
+
+@keyframes tunaWalk {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
